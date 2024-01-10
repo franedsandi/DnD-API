@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/bootstrap';
+@import './partials/login-register';
+@import './partials/generals';
+@import './partials/characters';
+@import './partials/races';
+
+header{
+    position:fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 99;
+    .top, .bottom {
+        width: 200px;
+    }
+}
+main{
+    padding-top: 80px;
+    overflow: auto;
+    height: 100vh;
+}
+
+.debug {
+    border: 1px solid red;
+}

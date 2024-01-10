@@ -1,0 +1,32 @@
+ // cards in index page
+.characters{
+.item{
+    .card-img-top {
+        border-radius: 10%;
+        box-shadow: 0px 0px 30px 10px rgba(87, 65, 6, 0.575);
+        height: 350px;
+        object-fit: cover;
+        overflow: hidden;
+        &:hover {
+            opacity: .9;
+        }
+    }
+    &.card{
+        background-color: rgba($color: #111111, $alpha: .7);
+        cursor: pointer;
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
+
+    // show page - singol character
+    .character.image img:hover {
+        opacity: .9;
+    }
+
+.text-muted{
+    color:white !important ;
+    margin-right: 15px;
+}
+}

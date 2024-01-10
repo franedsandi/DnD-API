@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/d-e-d-bg.jpg');
+    background-size: cover;
+    background-position-x: center;
+    }
+
+.main-wrapper{
+    padding-top: 100px;
+}
+.container {
+    background-color: rgba($color: #000000, $alpha: .5);
+    color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.card-body{
+    flex-direction: column;
+    align-items: center;
+}
+
+// home page boxes with counters
+
+:root{ --main-color: #b6b3b3; }
+.demo{ background-color: #eee; }
+.serviceBox {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 25px 15px 35px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(117, 117, 117, 0.5);
+    }
+    &:hover .service-icon {
+        color: var(--main-color);
+        background-color: rgba(255, 255, 255, 0.897);
+    }
+    a {
+        color: #fff;
+    }
+}
+.serviceBox:before{
+    content: "";
+    width: calc(100% + 10px);
+    height: 40px;
+    border-radius: 0 0 30px 30px;
+    border: 5px solid var(--main-color);
+    border-top: none;
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+}
+.serviceBox .service-icon{
+    background:var(--main-color);
+    font-size: 35px;
+    line-height: 35px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin: 0 auto 15px;
+
+}
+.serviceBox .title{
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+}
+.serviceBox .description{
+    color: #cfcbcb;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 24px;
+    margin: 0;
+}
+.serviceBox.green{ --main-color: #10BE81; }
+.serviceBox.pink{ --main-color: #F1679A; }
+.serviceBox.blue{ --main-color: #02A7B6; }
+@media only screen and (max-width: 1199px){
+    .serviceBox{ margin: 0 0 30px; }
+}
+
+
